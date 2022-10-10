@@ -1,0 +1,48 @@
+html {
+    box-sizing: border-box;
+}
+
+body {
+    color: $main-text-color;
+    background-color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 0.04em;
+    cursor: url(../images/vector.png) 1 5, auto;
+}
+
+body.modal-open {
+    overflow: hidden;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 20px;
+
+    @include mobile {
+        width: 480px;
+    }
+
+    @include tablet {
+        width: 768px;
+        padding: 0 32px;
+    }
+
+    @include desktop {
+        width: 1200px;
+        padding: 0 20px;
+    }
+
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
